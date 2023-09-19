@@ -10,4 +10,6 @@ npm install express
 node app.js
 ```
 
-Dockerized the express application then pushed to Dockerhub
+Containerize the express application then pushed to Dockerhub
+
+save the script , and make it executable by running ```chmod +x cluster.sh``` and then run it.
