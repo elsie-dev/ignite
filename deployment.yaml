@@ -1,32 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-express-deployment
+  name: express-deployment
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
-      app: hello-express
+      app: express-sample
   template:
     metadata:
       labels:
-        app: hello-express
+        app: express-sample
     spec:
       containers:
-        - name: hello-express
-          image: <your-dockerhub-username>/hello-express:latest
+        - name: express sample
+          image: elsiedev/expess:latest
           ports:
             - containerPort: 3000
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: hello-express-service
-spec:
-  selector:
-    app: hello-express
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 3000
-  type: LoadBalancer
