@@ -15,7 +15,7 @@ spec:
         app: express-sample
     spec:
       containers:
-        - name: express sample
+        - name: expresssample
           image: elsiedev/expess:latest
           ports:
             - containerPort: 3000

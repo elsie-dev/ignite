@@ -31,7 +31,7 @@
 
 variable "kind_cluster_name" {
   type        = string
-  description = "The name of the cluster."
+  description = "cluster name."
   default     = "demo-local"
 }
 
