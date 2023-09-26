@@ -21,10 +21,13 @@ node app.js
 
 1. When kind is up and running, dockerize a simple hello express and deploy to dockerhub.
 
-   ![](Dockerhub images)
+   ![Dockerhub](https://github.com/elsie-dev/ignite/blob/main/Screenshot%20from%202023-09-26%2009-38-33.png)
 
-2.  Create a Kuberenetes deployment manifest 
+2.  Create a Kuberenetes deployment manifest
+    - The manifest file is [deployment.yaml](https://github.com/elsie-dev/ignite/blob/main/deployment.yaml)
+      
 3. Write a terraform code to deploy the kubectl manifest to the kind cluster
    - The terraform code is included in the terraform folder.
 
 ## Bonus:
+### HELM CONFIGURATION (Work in progress)
