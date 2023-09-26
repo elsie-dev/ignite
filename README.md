@@ -1,15 +1,31 @@
 # DevOps Task:
 
 ## Deploying Node.js app:
- To run the app locally :
 
+ - To run the app locally :
 ```
 cd myapp
 npm init
 npm install express
 node app.js
 ```
+## Setup a Kubernetes cluster using KinD:
 
-Containerize the express application then pushed to Dockerhub
+1. Write a bash script that deploys a kind cluster locally.
+    - The bash script is named as cluster.sh
+    - save the script , and make it executable by running ```chmod +x cluster.sh``` and then run it.
+      
+2. Download the kubeconfig for the cluster
 
-save the script , and make it executable by running ```chmod +x cluster.sh``` and then run it.
+## Deploy a sample Node.js app with Terraform:
+
+1. When kind is up and running, dockerize a simple hello express and deploy to dockerhub.
+
+   ![](Dockerhub images)
+
+2. Create a Kuberenetes deployment manifest to deploy the Node.js to kind cluster but don't apply it yet.
+   - 
+3. Write a terraform code to deploy the kubectl manifest to the kind cluster
+   - The terraform code is included in the terraform folder.
+
+## Bonus:
