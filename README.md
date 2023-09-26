@@ -23,8 +23,7 @@ node app.js
 
    ![](Dockerhub images)
 
-2. Create a Kuberenetes deployment manifest to deploy the Node.js to kind cluster but don't apply it yet.
-   - 
+2.  Create a Kuberenetes deployment manifest 
 3. Write a terraform code to deploy the kubectl manifest to the kind cluster
    - The terraform code is included in the terraform folder.
 
